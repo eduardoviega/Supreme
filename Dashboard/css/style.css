@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3C3953;
+}
+
+h1 {
+    font-size: 60px;    
+    font-weight: 600;   
+    margin-bottom: 4vh;
+    line-height: 65px;
+}
+.cabecalho h2 {
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 16px;    
+    font-weight: 600;
+}
+h4 {
+    font-size: 16px;
+    margin: auto;
+    color: #8E8E8E;
+}
+h5 {
+    color: #fff;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main .barraLateral {
+    width: 5vw;
+    height: 100vh;
+    padding: 2.5vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    margin: auto;
+    border-right: 1px solid #C0C0C0;
+}
+main .barraLateral .opcoes, #last {
+    margin: auto;
+}
+main .barraLateral .opcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 13vh;
+}
+main .barraLateral #LogoIni {
+    padding-bottom: 2.5vh;
+}
+main .barraLateral hr {
+    width: 3vw;
+    border-top: 1px solid #C0C0C0;
+}
+main .barraLateral .imagem {
+    margin: 1.8vh 0;
+}
+main .barraLateral .selecao {
+    box-shadow: 3vw 0 2.5vw -3vw #0070FF inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 4.45vw;
+    border-left: 0.25vw solid #0070FF;
+    padding-right: 0.3vw;
+}
+main .barraLateral #ad1 {
+    margin-bottom: 2.4vh;
+}
+main .barraLateral #ad2 {
+    margin-top: 2.4vh;
+}
+main .barraLateral #last {
+    padding-bottom: 2vh;
+}
+
+main .centro {
+    width: 95vw;
+    margin: 0 0 0 5vw;
+}
+
+main .centro .cabecalho {
+    border-bottom: 1px solid #C0C0C0;
+    height: 11vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+main .centro .cabecalho .div {
+    display: flex;
+    margin: auto;
+}
+main .centro .cabecalho .text {
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+    gap: 0.5vw;
+}
+main .centro .cabecalho .imagens {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+main .centro .cabecalho .imgLupa {
+    margin-left: 56vw;
+}
+main .centro .cabecalho .imgLupa, .imgFiltro, .imgEmail {
+    margin-right: 1.8vw;
+}
+main .centro .cabecalho .imgPerfil {
+    margin-right: 0.6vw;
+}
+main .centro .cabecalho .imgBtn {
+    padding-top: 0.5vh;
+}
+
+main .centro .conteudo .linha1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;    
+    margin: auto;
+    
+}
+main .centro .conteudo .linha1 .textBtn {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    margin: auto;
+}
+main .centro .conteudo .linha1 .textBtn .btns *{
+    height: 6vh;
+    border-radius: 20px;
+    margin: 3vh 1.5vw 0 0;
+}
+main .centro .conteudo .linha1 .textBtn .btn-start {
+    width: 8vw;
+    background-color: #0070FF;
+    color: #fff;
+}
+main .centro .conteudo .linha1 .textBtn .btn-view {
+    width: 10vw;
+    border: 1px solid #0070FF;
+    background-color: #fff;
+    color: #0070FF;
+}
+main .centro .conteudo .linha1 .imgDevices {
+    margin: auto;
+}
+
+
+main .centro .conteudo .linha2 {
+    display: flex;
+    align-items: center;
+    width: 89vw;
+    margin: auto;
+    gap: 8vw;
+}
+main .centro .conteudo .linha2 .campoGraf{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #E3E2F0;
+    border-radius: 18px;
+    margin: auto;
+}
+main .centro .conteudo .linha2 .campoGraf .porcent{
+    width: 4vw;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-color: #00FF75;
+    border-radius: 15px;
+}
+main .centro .conteudo .linha2 .campoGraf .texto {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #C0C0C0;
+    margin-bottom: 5vh;
+}
+
+main .centro .conteudo .maior {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 0;
+}
