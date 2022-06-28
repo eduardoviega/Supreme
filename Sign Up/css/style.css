@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #000227;
+    color: #fff;
+}
+
+
+h1 {
+    font-weight: 600;
+    font-size: 55px;
+    padding-bottom: 10px;
+}
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-right: 11vw;
+}
+h3, input::placeholder, textarea::placeholder{
+    color: #fff;
+    font-size: 14px;
+    margin-right: 5vw;
+}
+h2,h3 {
+    cursor: pointer;
+}
+h4 {
+    font-size: 16px;
+    word-spacing: 3px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 3px;
+}
+
+header {
+    width: 93%;
+    display: flex;
+    margin-left: 5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .cabecalho {
+    margin-top: 2vh;
+    width: 100%;
+    height: 10vh;
+    
+    display: flex;
+    align-items: center;
+}
+
+header .cabecalho .links {
+    width: 80vw;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .cabecalho button {
+    background-color: #0070FF;
+    width: 7vw;
+    height: 5vh;
+    margin-right: 1vw;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+header .cabecalho .botoes /*div*/ {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2vw;
+}
+
+header .cabecalho .botoes .login {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+}
+
+/* ------------------------------------ */
+
+main {
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+main .conteudo .inputs {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: 30px 5vw 0vh 0vw;
+}
+
+main .conteudo input, .in5 {
+    background-color: #17203D;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+main .conteudo .in1, .in2, .in3, .in4, .in5 {
+    width: 32.3vw;
+    height: 40px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-bottom: 18px;
+}
+
+main .conteudo .in5 {
+    height: 15vh;
+    padding: 15px 1vw 0px 1vw;
+    resize: none;
+}
+
+main .conteudo .texto2 {
+    display:flex; 
+    flex-direction:row; 
+    width:34.3vw;
+}
+
+main .conteudo .texto2 .check{
+    display:flex; 
+    flex-direction:row; 
+    align-items: center;
+    width: 25.3vw;
+}
+
+main .conteudo #btn-send {
+    width: 9vw;
+    height: 5vh;
+    font-size: 14px;
+    border-radius: 14px;
+    cursor: pointer;
+    background-color: #0070FF;  
+}
+
+
+main .imagem {
+    width: 43vw;
+    height: 27vw;
+    border-radius: 30px;
+    filter: drop-shadow(0px 0px 60px #0070FF);
+}
