@@ -15,9 +15,6 @@ h1 {
     margin-bottom: 4vh;
     line-height: 65px;
 }
-.cabecalho h2 {
-    cursor: pointer;
-}
 
 h3 {
     font-size: 16px;    
@@ -48,6 +45,9 @@ main .barraLateral {
     position: fixed;
     margin: auto;
     border-right: 1px solid #C0C0C0;
+}
+main .barraLateral img{
+    cursor: pointer;
 }
 main .barraLateral .opcoes, #last {
     margin: auto;
@@ -103,6 +103,9 @@ main .centro .cabecalho .div {
     display: flex;
     margin: auto;
 }
+main .centro .cabecalho .div * {
+    cursor: pointer;
+}
 main .centro .cabecalho .text {
     display: flex;
     align-items: center;
@@ -113,6 +116,9 @@ main .centro .cabecalho .imagens {
     display: flex;
     align-items: center;
     margin: auto;
+}
+main .centro .cabecalho .imagens * {
+    cursor: pointer;
 }
 main .centro .cabecalho .imgLupa {
     margin-left: 56vw;
@@ -141,10 +147,11 @@ main .centro .conteudo .linha1 .textBtn {
     width: 45vw;
     margin: auto;
 }
-main .centro .conteudo .linha1 .textBtn .btns *{
+main .centro .conteudo .linha1 .textBtn .btns * {
     height: 6vh;
     border-radius: 20px;
     margin: 3vh 1.5vw 0 0;
+    cursor: pointer;
 }
 main .centro .conteudo .linha1 .textBtn .btn-start {
     width: 8vw;
