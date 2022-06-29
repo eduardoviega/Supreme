@@ -14,7 +14,7 @@ function mudaFundo(value, img){
         document.getElementById(`${i}`).style.marginBottom = '0px';
     }
     
-    value.style.boxShadow = '3vw 0 2.5vw -3vw #0070FF inset';
+    value.style.boxShadow = '3vw 0 3vw -3vw #0070FF inset';
     value.style.borderLeft = '0.25vw solid #0070FF';
     
     value.style.marginTop = '2vh';

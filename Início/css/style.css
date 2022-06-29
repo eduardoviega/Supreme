@@ -112,6 +112,7 @@ main .conteudo1 .texto .start {
     font-size: 14px;
 }
 
+
 main .conteudo2 {
     width: 90%;
     height: 35vh;
@@ -136,16 +137,6 @@ main .conteudo2 .divisao1, .divisao2, .divisao3, .divisao4 {
 
 main .conteudo2 .divisao1 {
     margin-left: 2vw;
-}
-
-main .conteudo2 .container {
-    background-color: #28345E;
-    height: 80%;
-    border-radius: 15px;
-}
-main .conteudo2 .container *{
-    background-color: #28345E;  
-    border-radius: 15px;
 }
 
 main .conteudo2 .imagem {
@@ -189,15 +180,15 @@ main .conteudo2 .linhaporc {
     margin-bottom: 3px;
 }
 
-#id1 {
+#id11 {
     background-color: #EEC800;
 }
-#id2 {
+#id22 {
     background-color: #FF7700;
 }
-#id3 {
+#id33 {
     background-color: #D10300;
 }
-#id4 {
+#id44 {
     background-color: #00BB1E;
 }
