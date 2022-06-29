@@ -58,6 +58,38 @@ main .barraLateral .opcoes {
     align-items: center;
     padding-bottom: 13vh;
 }
+main .barraLateral .opcoes #img1 {
+    width:21px; 
+    height:21px; 
+}
+main .barraLateral .opcoes #img2 {
+    width:26px; 
+    height:26px;
+}
+main .barraLateral .opcoes #img3 {
+    width:20px; 
+    height:20px;
+}
+main .barraLateral .opcoes #img4 {
+    width:23px; 
+    height:23px;
+}
+main .barraLateral .opcoes #img5 {
+    width:23px; 
+    height:23px;
+}
+main .barraLateral .opcoes #img6 {
+    width:20px; 
+    height:20px;
+}
+main .barraLateral .opcoes #img7 {
+    width:23px; 
+    height:23px;
+}
+main .barraLateral .opcoes #img8 {
+    width:24px; 
+    height:24px;
+}
 main .barraLateral #LogoIni {
     padding-bottom: 2.5vh;
 }
