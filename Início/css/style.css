@@ -125,7 +125,7 @@ main .conteudo2 {
 }
 
 main .conteudo2 .divisao1 *, .divisao2 *, .divisao3 *, .divisao4 * {
-    background-color: #0F1B44;
+    background-color: transparent;
 }
 
 main .conteudo2 .divisao1, .divisao2, .divisao3, .divisao4 {
@@ -133,6 +133,7 @@ main .conteudo2 .divisao1, .divisao2, .divisao3, .divisao4 {
     height: 80%;
     width: 16vw;
     padding-left: 2vw;
+    border-radius: 15px;
 }
 
 main .conteudo2 .divisao1 {
