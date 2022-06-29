@@ -118,6 +118,7 @@ main .conteudo {
 }
 .form5{
     position: relative;
+    height: 18vh;
 }
 
 .input_form1, .input_form2, .input_form3, .input_form4{
@@ -141,6 +142,10 @@ main .conteudo {
     left 200ms ease-in,
     font-size 200ms ease-in;
     background-color: transparent;
+}
+.input_form1:hover, .input_form2:hover, .input_form3:hover, .input_form4:hover, .input_form5:hover{
+    border: 2px solid;
+    border-color: #0070FF;
 }
 .input_form1:focus ~ .label_form1,
 .input_form1:not(:placeholder-shown).input_form1:not(:focus) ~ .label_form1,
@@ -169,7 +174,7 @@ main .conteudo .texto2 .check{
     display:flex; 
     flex-direction:row; 
     align-items: center;
-    width: 25.3vw;
+    width: 25.3rem;
 }
 
 main .conteudo #btn-send {
