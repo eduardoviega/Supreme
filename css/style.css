@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #000227;
+    color: #fff;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-right: 11vw;
+}
+h3 {
+    font-size: 14px;
+    margin-right: 5vw;
+}
+p{
+    font-size: 16px;
+    word-spacing: 2px;
+}
+h2,h3 {
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    padding-left: 5%;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 3px #00000077);
+}
+
+header .cabecalho {
+    margin: 10px 0; 
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+header .cabecalho .links {
+    width: 75vw;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .cabecalho button {
+    background-color: #0070FF;
+    width: 7vw;
+    height: 5vh;
+    margin-right: 1vw;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+header .cabecalho .botoes /*div*/ {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2vw;
+}
+
+header .cabecalho .botoes .login {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+}
+
+main {
+    display: flex;
+    padding-top: 10vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .conteudo1 {
+    width: 90%;
+    height: 300px;
+    margin-top: 15vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+main .conteudo1 .imagem {
+    width: 48vw;
+    height: 27vw;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    border-radius: 40px;
+    filter: drop-shadow(0px 0px 60px #0070FF);
+}
+
+main .conteudo1 .texto .start {
+    background-color: #0070FF;
+    width: 10vw;
+    height: 5vh;
+    margin-top: 3vh;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+main .conteudo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 13vw 5vw 3vw 5vw;
+    padding: 3vh 0;
+    gap: 6vw;
+    border-radius: 15px;
+    background-color: #0F1B44; 
+}
+
+main .conteudo2 .divisao1 *, .divisao2 *, .divisao3 *, .divisao4 * {
+    background-color: transparent;
+}
+
+main .conteudo2 .divisao1, .divisao2, .divisao3, .divisao4 {
+    background-color: #0F1B44;
+    height: 85%;
+    width: 16vw;
+    padding: 0 0 3vh 0;
+    border-radius: 15px;
+    transition: background-color .5s;
+}
+
+main .conteudo2 .imagem {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 30px;
+    padding-top: 1.8vw;
+    padding-left: 2vw;
+}
+
+main .conteudo2 .text1, .text3, .text4 {
+    padding-left: 2vw;
+    margin-bottom: 5px;
+}
+
+main .conteudo2 .text1, .text2, .text4{
+    font-size: 16px;
+}
+
+main .conteudo2 .text1 {
+    padding-top: 5px;
+}
+
+main .conteudo2 .text2{
+    margin-left: 10px;
+    border-radius: 50px;
+    padding: 5px 10px 5px 10px;
+}
+
+main .conteudo2 .text3 {
+    font-size: 29px;
+}
+
+main .conteudo2 .linhaporc {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3px;
+}
+
+#id11 {
+    background-color: #EEC800;
+}
+#id22 {
+    background-color: #FF7700;
+}
+#id33 {
+    background-color: #D10300;
+}
+#id44 {
+    background-color: #00BB1E;
+}
