@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #000227;
+    color: #fff;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 5vh;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-right: 11vw;
+}
+
+h3 {
+    font-size: 14px;
+    margin-right: 5vw;
+}
+
+h2,h3 {
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    padding-left: 5%;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 5px #00000077);
+}
+
+header .cabecalho {
+    margin: 10px 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+header .cabecalho .links {
+    width: 75vw;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .cabecalho button {
+    background-color: #0070FF;
+    width: 7vw;
+    height: 5vh;
+    margin-right: 1vw;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+header .cabecalho .botoes /*div*/ {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2vw;
+}
+
+header .cabecalho .botoes .login {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+}
+
+
+main {
+    display: flex;
+    padding-top: 10vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .conteudo1 {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* ------------------------------------ */
+
+.conteudo1 .menores{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.conteudo1 input, .input_form5 {
+    background-color: #17203D;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.form1, .form2, .form3, .form4{
+    position: relative;
+    width: 30rem;
+    height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.form3, .form4{
+    margin-left: 1rem;
+}
+.form5{
+    position: relative;
+    width: 60rem;
+    height: 9rem;
+}
+
+.input_form1, .input_form2, .input_form3, .input_form4{
+    width: 29rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+}
+.input_form5 {
+    width: 59rem;
+    height: 8rem;
+    margin-bottom: 1.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 10px;
+    resize: none;
+}
+
+.label_form1, .label_form2, .label_form3, .label_form4, .label_form5{
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    transition: top 200ms ease-in,
+    left 200ms ease-in,
+    font-size 200ms ease-in;
+    background-color: transparent;
+}
+.input_form1:hover, .input_form2:hover, .input_form3:hover, .input_form4:hover, .input_form5:hover{
+    border: 2px solid;
+    border-color: #0070FF;
+}
+.input_form1:focus ~ .label_form1,
+.input_form1:not(:placeholder-shown).input_form1:not(:focus) ~ .label_form1,
+.input_form2:focus ~ .label_form2,
+.input_form2:not(:placeholder-shown).input_form2:not(:focus) ~ .label_form2,
+.input_form3:focus ~ .label_form3,
+.input_form3:not(:placeholder-shown).input_form3:not(:focus) ~ .label_form3,
+.input_form4:focus ~ .label_form4,
+.input_form4:not(:placeholder-shown).input_form4:not(:focus) ~ .label_form4,
+.input_form5:focus ~ .label_form5,
+.input_form5:not(:placeholder-shown).input_form5:not(:focus) ~ .label_form5{
+    top: -1.1rem;
+    font-size: 0.7rem;
+    left: 0.8rem;
+}
+
+/* ------------------------------------ */
+
+main .conteudo1 .texto2 {
+    width: 61rem;
+    margin: 20px 0px 50px;
+    display: flex;
+    float: right;
+    flex-direction: column;
+}
+
+main .conteudo1 .texto2 .textoecheck{
+    display: block;
+    float: right;
+    padding-left: 5vw;
+}
+
+main .conteudo1 .texto2 .check label *{
+    cursor: pointer;
+}
+
+main .conteudo1 .texto2 .check {
+    width: fit-content;
+    font-size: 10px;
+}
+
+main .conteudo1 .texto2 .check .checkbox {
+    display: flex;
+    align-items: center;
+    transform: scale(1.5);
+}
+
+main .conteudo1 .texto2 .check .checkbox input {
+    margin-right: 5px;
+}
+
+main .redquired {
+    display: flex;
+    float: right;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+main .conteudo1 .botao {
+    text-align: right;
+}
+
+.button {
+    position: relative;
+    width: 180px;
+    height: 5vh;
+    font-size: 14px;
+    border-radius: 14px;
+    background-color: #0070FF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.button .iconec {
+    height: 3vh;
+    opacity: 0;
+}
+
+.button * {
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .3s;
+}
+
+main .conteudo2 .mapa {
+    width: 61rem;
+    height: 20vw;
+}
+
+main .conteudo2 .localizaTexto {
+    display: flex;
+    flex-direction: row;
+}
+
+main .conteudo2 .localizaTexto .icone {
+    margin: 1vw;
+    width: 20px;
+    height: 30px;
+}
+
+main .conteudo2 .localizaTexto .texto h5 {
+    margin-top: 15px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+main .conteudo2 .localizaTexto .texto h4 {
+    margin-bottom: 5vh;
+}
