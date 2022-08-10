@@ -1,3 +1,14 @@
+:root{
+    --azulEscuro: #000227;
+    --cinzaAzulado: #17203D;
+    --azulClaro: #0070FF;
+    --amarelo: #EEC800;
+    --laranja: #FF7700;
+    --vermelho: #D10300;
+    --verde: #00BB1E;
+    --branco: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +16,8 @@
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     font-weight: 500;
-    background-color: #000227;
-    color: #fff;
+    background-color: var(--azulEscuro);
+    color: var(--branco);
 }
 
 h1 {
@@ -41,7 +52,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 1;
-    filter: drop-shadow(0px 0px 3px #00000077);
+    filter: drop-shadow(0px 0px 3px var(--azulEscuro));
 }
 
 header .cabecalho {
@@ -61,7 +72,7 @@ header .cabecalho .links {
 }
 
 header .cabecalho button {
-    background-color: #0070FF;
+    background-color: var(--azulClaro);
     width: 7vw;
     height: 5vh;
     margin-right: 1vw;
@@ -77,8 +88,8 @@ header .cabecalho .botoes /*div*/ {
 }
 
 header .cabecalho .botoes .login {
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid #fff;
+    background-color: var(--azulEscuro);
+    border: 1px solid var(--branco);
 }
 
 main {
@@ -103,11 +114,11 @@ main .conteudo1 .imagem {
     margin-left: 10vw;
     margin-right: 5vw;
     border-radius: 40px;
-    filter: drop-shadow(0px 0px 60px #0070FF);
+    filter: drop-shadow(0px 0px 60px var(--azulClaro));
 }
 
 main .conteudo1 .texto .start {
-    background-color: #0070FF;
+    background-color: var(--azulClaro);
     width: 10vw;
     height: 5vh;
     margin-top: 3vh;
@@ -126,7 +137,7 @@ main .conteudo2 {
     padding: 3vh 0;
     gap: 6vw;
     border-radius: 15px;
-    background-color: #0F1B44; 
+    background-color: var(--cinzaAzulado); 
 }
 
 main .conteudo2 .divisao1 *, .divisao2 *, .divisao3 *, .divisao4 * {
@@ -134,7 +145,7 @@ main .conteudo2 .divisao1 *, .divisao2 *, .divisao3 *, .divisao4 * {
 }
 
 main .conteudo2 .divisao1, .divisao2, .divisao3, .divisao4 {
-    background-color: #0F1B44;
+    background-color: var(--cinzaAzulado);
     height: 85%;
     width: 16vw;
     padding: 0 0 3vh 0;
@@ -180,14 +191,27 @@ main .conteudo2 .linhaporc {
 }
 
 #id11 {
-    background-color: #EEC800;
+    background-color: var(--amarelo);
 }
 #id22 {
-    background-color: #FF7700;
+    background-color: var(--laranja);
 }
 #id33 {
-    background-color: #D10300;
+    background-color: var(--vermelho);
 }
 #id44 {
-    background-color: #00BB1E;
+    background-color: var(--verde);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--cinzaAzulado);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--azulClaro);
+    border-radius: 20px;
 }

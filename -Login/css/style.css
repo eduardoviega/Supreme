@@ -1,3 +1,10 @@
+:root{
+    --azulEscuro: #000227;
+    --cinzaAzulado: #17203D;
+    --azulClaro: #0070FF;
+    --branco: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +12,8 @@
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     font-weight: 500;
-    background-color: #000227;
-    color: #fff;
+    background-color: var(--azulEscuro);
+    color: var(--branco);
 }
 
 h1 {
@@ -49,7 +56,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 1;
-    filter: drop-shadow(0px 0px 3px #00000077);
+    filter: drop-shadow(0px 0px 3px var(--azulEscuro));
 }
 
 header .cabecalho {
@@ -69,7 +76,7 @@ header .cabecalho .links {
 }
 
 header .cabecalho button {
-    background-color: #0070FF;
+    background-color: var(--azulClaro);
     width: 7vw;
     height: 5vh;
     margin-right: 1vw;
@@ -85,8 +92,8 @@ header .cabecalho .botoes /*div*/ {
 }
 
 header .cabecalho .botoes .login {
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid #fff;
+    background-color: var(--azulEscuro);
+    border: 1px solid var(--branco);
 }
 
 main {
@@ -104,7 +111,7 @@ main .divisao1 {
     margin-top: 10vh;
 }
 
-main .botoes /*div*/{
+main .botoes {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -128,21 +135,21 @@ main button img {
 }
 
 main .google {
-    background-color: #fff;
-    color: #000227;
+    background-color: var(--branco);
+    color: var(--azulEscuro);
     margin-right: 50px;
 }
 main .google img {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     margin-right: 15px;
 }
 
 main .email {
-    background-color: #0070FF;
+    background-color: var(--azulClaro);
     padding-left: 5px;
 }
 main .email img {
-    background-color: #0070FF;
+    background-color: var(--azulClaro);
     margin-right: 25px;
 }
 
@@ -150,5 +157,18 @@ main .imagem {
     width: 45vw;
     height: 28vw;
     border-radius: 30px;
-    filter: drop-shadow(0px 0px 60px #0070FF);
+    filter: drop-shadow(0px 0px 60px var(--azulClaro));
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--cinzaAzulado);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--azulClaro);
+    border-radius: 20px;
 }

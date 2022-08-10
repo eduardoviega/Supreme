@@ -1,3 +1,14 @@
+:root{
+    --azulEscuro: #000227;
+    --cinzaAzulado: #17203D;
+    --azulClaro: #0070FF;
+    --verde: #00FF75;
+    --branco: #ffffff;
+    --cinza: #c0c0c0;
+    --cinzaEscuro: #8E8E8E;
+    --cinzaEscuro2: #3C3953;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +17,7 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
-    color: #3C3953;
+    color: var(--cinzaEscuro2);
 }
 
 h1 {
@@ -23,10 +34,10 @@ h3 {
 h4 {
     font-size: 16px;
     margin: auto;
-    color: #8E8E8E;
+    color: var(--cinzaEscuro);
 }
 h5 {
-    color: #fff;
+    color: var(--branco);
     margin: auto;
 }
 
@@ -44,7 +55,7 @@ main .barraLateral {
     align-items: center;
     position: fixed;
     margin: auto;
-    border-right: 1px solid #C0C0C0;
+    border-right: 1px solid var(--cinza);
 }
 main .barraLateral img{
     cursor: pointer;
@@ -108,14 +119,14 @@ main .barraLateral .opcoes #img8 {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(
-        0deg, #0070FF 0%,
-        #0F1B44 100% );
+        0deg, var(--azulClaro) 0%,
+        var(--azulEscuro) 100% );
     animation: spin .9s infinite linear;
 }
 .spinner::after{
     width: 75%;
     height: 75%;
-    background-color: #fff;
+    background-color: var(--branco);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -127,14 +138,12 @@ main .barraLateral .opcoes #img8 {
 }
 main .barraLateral hr {
     width: 3vw;
-    border-top: 1px solid #C0C0C0;
+    border-top: 1px solid var(--cinza);
 }
 main .barraLateral .imagem {
     margin: 1.8vh 0;
 }
 main .barraLateral .selecao {
-    /* box-shadow: 3vw 0 2.5vw -3vw #0070FF inset;
-    border-left: 0.25vw solid #0070FF; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,7 +161,7 @@ main .centro {
 }
 
 main .centro .cabecalho {
-    border-bottom: 1px solid #C0C0C0;
+    border-bottom: 1px solid var(--cinza);
     height: 11vh;
     display: flex;
     flex-direction: row;
@@ -211,19 +220,18 @@ main .centro .conteudo .linha1 .textBtn .btns * {
 }
 main .centro .conteudo .linha1 .textBtn .btn-start {
     width: 8vw;
-    background-color: #0070FF;
-    color: #fff;
+    background-color: var(--azulClaro);
+    color: var(--branco);
 }
 main .centro .conteudo .linha1 .textBtn .btn-view {
     width: 10vw;
-    border: 1px solid #0070FF;
-    background-color: #fff;
-    color: #0070FF;
+    border: 1px solid var(--azulClaro);
+    background-color: var(--branco);
+    color: var(--azulClaro);
 }
 main .centro .conteudo .linha1 .imgDevices {
     margin: auto;
 }
-
 
 main .centro .conteudo .linha2 {
     display: flex;
@@ -235,7 +243,7 @@ main .centro .conteudo .linha2 {
 main .centro .conteudo .linha2 .campoGraf{
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 20px #E3E2F0;
+    box-shadow: 0 0 15px var(--cinza);
     border-radius: 18px;
     margin: auto;
 }
@@ -245,13 +253,13 @@ main .centro .conteudo .linha2 .campoGraf .porcent{
     display: flex;
     align-items: center;
     margin: auto;
-    background-color: #00FF75;
+    background-color: var(--verde);
     border-radius: 15px;
 }
 main .centro .conteudo .linha2 .campoGraf .texto {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #C0C0C0;
+    border-bottom: 1px solid var(--cinza);
     margin-bottom: 5vh;
 }
 
@@ -261,4 +269,17 @@ main .centro .conteudo .maior {
     flex-direction: column;
     align-items: center;
     margin: 5vh 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--branco);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--azulClaro);
+    border-radius: 20px;
 }

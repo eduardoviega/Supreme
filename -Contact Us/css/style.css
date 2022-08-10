@@ -1,3 +1,10 @@
+:root{
+    --azulEscuro: #000227;
+    --cinzaAzulado: #17203D;
+    --azulClaro: #0070FF;
+    --branco: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +12,8 @@
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     font-weight: 500;
-    background-color: #000227;
-    color: #fff;
+    background-color: var(--azulEscuro);
+    color: var(--branco);
 }
 
 h1 {
@@ -44,7 +51,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 1;
-    filter: drop-shadow(0px 0px 5px #00000077);
+    filter: drop-shadow(0px 0px 5px var(--azulEscuro));
 }
 
 header .cabecalho {
@@ -64,7 +71,7 @@ header .cabecalho .links {
 }
 
 header .cabecalho button {
-    background-color: #0070FF;
+    background-color: var(--azulClaro);
     width: 7vw;
     height: 5vh;
     margin-right: 1vw;
@@ -73,15 +80,15 @@ header .cabecalho button {
     font-size: 14px;
 }
 
-header .cabecalho .botoes /*div*/ {
+header .cabecalho .botoes {
     display: flex;
     flex-direction: row;
     margin-right: 2vw;
 }
 
 header .cabecalho .botoes .login {
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid #fff;
+    background-color: transparent;
+    border: 1px solid var(--branco);
 }
 
 
@@ -108,7 +115,7 @@ main .conteudo1 {
 }
 
 .conteudo1 input, .input_form5 {
-    background-color: #17203D;
+    background-color: var(--cinzaAzulado);
     font-weight: 400;
     border-radius: 5px;
 }
@@ -223,8 +230,8 @@ main .conteudo1 .botao {
     height: 5vh;
     font-size: 14px;
     border-radius: 14px;
-    background-color: #0070FF;
-    color: #fff;
+    background-color: var(--azulClaro);
+    color: var(--branco);
     cursor: pointer;
     transition: background-color .2s;
 }
@@ -268,4 +275,17 @@ main .conteudo2 .localizaTexto .texto h5 {
 
 main .conteudo2 .localizaTexto .texto h4 {
     margin-bottom: 5vh;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--cinzaAzulado);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--azulClaro);
+    border-radius: 20px;
 }

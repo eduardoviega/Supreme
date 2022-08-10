@@ -1,3 +1,10 @@
+:root{
+    --azulEscuro: #000227;
+    --cinzaAzulado: #17203D;
+    --azulClaro: #0070FF;
+    --branco: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +12,9 @@
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     font-weight: 500;
-    background-color: #000227;
-    color: #fff;
+    background-color: var(--azulEscuro);
+    color: var(--branco);
 }
-
 
 h1 {
     font-weight: 600;
@@ -21,7 +27,7 @@ h2 {
     margin-right: 11vw;
 }
 h3, input::placeholder, textarea::placeholder{
-    color: #fff;
+    color: var(--branco);
     font-size: 14px;
     margin-right: 5vw;
 }
@@ -63,7 +69,7 @@ header .cabecalho .links {
 }
 
 header .cabecalho button {
-    background-color: #0070FF;
+    background-color: var(--azulClaro);
     width: 7vw;
     height: 5vh;
     margin-right: 1vw;
@@ -79,8 +85,8 @@ header .cabecalho .botoes /*div*/ {
 }
 
 header .cabecalho .botoes .login {
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid #fff;
+    background-color: var(--azulEscuro);
+    border: 1px solid var(--branco);
 }
 
 /* ------------------------------------ */
@@ -108,7 +114,7 @@ main .conteudo {
 /* ------------------------------------ */
 
 .conteudo input, .input_form5 {
-    background-color: #17203D;
+    background-color: var(--cinzaAzulado);
     font-weight: 400;
     border-radius: 5px;
 }
@@ -147,7 +153,7 @@ main .conteudo {
 }
 .input_form1:hover, .input_form2:hover, .input_form3:hover, .input_form4:hover, .input_form5:hover{
     border: 2px solid;
-    border-color: #0070FF;
+    border-color: var(--azulClaro);
 }
 .input_form1:focus ~ .label_form1,
 .input_form1:not(:placeholder-shown).input_form1:not(:focus) ~ .label_form1,
@@ -195,12 +201,25 @@ main .conteudo #btn-send {
     font-size: 16px;
     border-radius: 14px;
     cursor: pointer;
-    background-color: #0070FF;  
+    background-color: var(--azulClaro);  
 }
 
 main .imagem {
     width: 43vw;
     height: 27vw;
     border-radius: 30px;
-    filter: drop-shadow(0px 0px 60px #0070FF);
+    filter: drop-shadow(0px 0px 60px var(--azulClaro));
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--cinzaAzulado);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--azulClaro);
+    border-radius: 20px;
 }
