@@ -40,50 +40,50 @@ h4 {
 }
 
 header {
-    width: 100%;
     display: flex;
-    padding-left: 5%;
     flex-direction: column;
     align-items: center;
     position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1;
     filter: drop-shadow(0px 0px 3px var(--azulEscuro));
 }
 
 header .cabecalho {
-    margin: 10px 0; 
-    width: 100%;
-    height: 60px;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 3.5vh 0;
+    gap: 2vw;
 }
 
-header .cabecalho .links {
-    width: 28vw;
-    height: 60%;
+header .cabecalho .titulo /*div*/ {
+    flex: 2;
+}
+
+header .cabecalho .links /*div*/ {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-right: 28vw;
-    margin-left: 10vw;
     justify-content: space-between;
-}
-
-header .cabecalho button {
-    background-color: var(--azulClaro);
-    width: 7vw;
-    height: 5vh;
-    margin-right: 1vw;
-    border-radius: 14px;
-    cursor: pointer;
-    font-size: 14px;
+    gap: 2vw;
+    flex: 3;
 }
 
 header .cabecalho .botoes /*div*/ {
     display: flex;
-    flex-direction: row;
-    margin-right: 2vw;
+    justify-content: end;
+    gap: 2vw;
+    flex: 4;
+}
+
+button {
+    background-color: var(--azulClaro);
+    padding: 10px 15px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 14px;
+    width: max-content;
 }
 
 header .cabecalho .botoes .login {
@@ -91,18 +91,17 @@ header .cabecalho .botoes .login {
     border: 1px solid var(--branco);
 }
 
-.list {
+header .list {
     list-style: none;
-    text-align: center;
 }
-.list a{
+header .list a{
+    width: max-content;
     display: inline-block;
-    margin-block: 2px;
     text-decoration: none;
     color: var(--branco);
     position: relative;
 }
-.list a::after{
+header .list a::after{
     content: '';
     width: 100%;
     height: 1px;
@@ -115,7 +114,7 @@ header .cabecalho .botoes .login {
     transform-origin: left;
     transition: transform .25s ease;
 }
-.list a:hover::after{
+header .list a:hover::after{
     transform: scaleX(1);
 }
 
